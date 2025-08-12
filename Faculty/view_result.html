@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Result Dashboard</title>
+  <link rel="stylesheet" href="fresults.css" />
 </head>
 <body>
-    
+
+  <h1 class="title">Faculty Result Dashboard</h1>
+
+  <section class="section">
+    <h2>Your Courses</h2>
+    <ul class="course-list">
+      <li>Front End Development</li>
+      <li>DBMS</li>
+      <li>Open Source Engineering</li>
+      <li>Oops</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Post/View Results</h2>
+    <label for="courses">Select Course:</label>
+    <select id="courses">
+      <option value="Front End Development">Front End Development</option>
+      <option value="DBMS">DBMS</option>
+      <option value="Open Source Engineering">Open Source Engineering</option>
+      <option value ="Oops">Oops</option>
+    </select>
+  </section>
+
+  <section class="section">
+    <h2>Student Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Student ID</th>
+          <th>Marks</th>
+          <th>Grade</th>
+          <th>Status</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>3139</td>
+          <td>85</td>
+          <td>A</td>
+          <td>P</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>3299</td>
+          <td>78</td>
+          <td>B</td>
+          <td>P</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Emily Johnson</td>
+          <td>3291</td>
+          <td>92</td>
+          <td>O</td>
+          <td>P</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Michael Brown</td>
+          <td>3300</td>
+          <td>65</td>
+          <td>C</td>
+          <td>P</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
 </body>
 </html>

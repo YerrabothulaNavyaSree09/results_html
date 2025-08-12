@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Report View</title>
+  <link rel="stylesheet" href="freport.css" />
 </head>
 <body>
-    
+
+  <h1 class="page-title">Faculty Report View</h1>
+
+  <div class="filter-section">
+    <div class="filter-group">
+      <label for="course">Course:</label>
+      <select id="course">
+        <option>All</option>
+        <option>Front End Development</option>
+        <option>DBMS</option>
+        <option>OOPS</option>
+        <option>Operating Systems</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="ay">Academic Year:</label>
+      <select id="ay">
+        <option>2025-2026</option>
+        <option>2024-2025</option>
+        <option>2023-2024</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="semester">Semester:</label>
+      <select id="semester">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="grade">Grade:</label>
+      <select id="grade">
+        <option>All</option>
+        <option>O</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>F</option>
+      </select>
+    </div>
+  </div>
+
+ 
+  <h2 class="section-title">Course Performance Report</h2>
+
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th>Grade A</th>
+        <th>Grade B</th>
+        <th>Grade C</th>
+        <th>Grade D</th>
+        <th>Average Marks</th>
+        <th>Pass Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12</td>
+        <td>9</td>
+        <td>5</td>
+        <td>2</td>
+        <td>78.5</td>
+        <td>92%</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>

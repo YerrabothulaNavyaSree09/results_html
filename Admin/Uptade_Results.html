@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Results</title>
+  <link rel="stylesheet" href="update.css">
+</head>
+<body>
+
+  <h1 class="title">Update Results</h1>
+
+  <div class="form-container">
+    <div class="form-row">
+      <label for="regno">Select Reg. No.</label>
+      <select id="regno" name="regno">
+        <option value="3248">3248</option>
+        <option value="3247">3247</option>
+        <option value="3278">3278</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="course">Select Course</label>
+      <select id="course" name="course">
+        <option value="FED">FED</option>
+        <option value="Oops">Oops</option>
+        <option value="AI&ML">AI & ML</option>
+        <option value="OS">OS</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="marks">Enter New Marks</label>
+      <input type="number" id="marks" name="marks" min="0" max="100" placeholder="e.g. 85">
+    </div>
+
+    <div class="btn-container">
+      <button type="submit">Update</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2e6ff; 
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #12052f;
+  margin-bottom: 30px;
+}
+
+
+.form-section {
+  background-color: #a1b4d1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 3px 8px rgba(94, 75, 139, 0.2);
+}
+
+.form-section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+}
+
+.form-section label {
+  font-weight: bold;
+  color: #5e4b8b;
+}
+
+.form-section input,
+.form-section select {
+  padding: 8px;
+  border: 1px solid #cbbde2;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-section button {
+  grid-column: span 2;
+  background-color: #5e4b8b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #4c3a72;
+}
+
+
+.table-section {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(94, 75, 139, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #d1c4e9; 
+  color: #4c3a72;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2d7f3;
+}
+
+tr:hover {
+  background-color: #f3effa;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.status.active {
+  background-color: #b39ddb;
+  color: #2e1b47;
+}
+
+.status.inactive {
+  background-color: #e1bee7;
+  color: #4a235a;
+}
+
+button.edit {
+  background-color: #7e57c2;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.delete {
+  background-color: #ab47bc;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button.edit:hover {
+  background-color: #6a1b9a;
+}
+
+button.delete:hover {
+  background-color: #8e24aa;
+}

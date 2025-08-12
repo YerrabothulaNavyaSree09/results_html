@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Management</title>
+  <link rel="stylesheet" href="cm.css">
 </head>
 <body>
-    
+
+  <h1>Course Management</h1>
+
+ 
+  <section class="table-section">
+    <h2>Existing Courses</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>CourseID</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Credits</th>
+          <th>Department</th>
+          <th>Semester</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>FED101</td>
+          <td>Front End Development</td>
+          <td>3</td>
+          <td>Computer Science</td>
+          <td>1</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>DBM202</td>
+          <td>Database Management</td>
+          <td>4</td>
+          <td>Information Technology</td>
+          <td>2</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+ 
+  <section class="form-section">
+    <h2>Add / Edit Course</h2>
+    <form>
+      <label>Code*:
+        <input type="text" name="code" required>
+      </label>
+      <label>Title*:
+        <input type="text" name="title" required>
+      </label>
+      <label>Description:
+        <textarea name="description" rows="3"></textarea>
+      </label>
+      <label>Credits*:
+        <input type="number" name="credits" required>
+      </label>
+      <label>Department*:
+        <select name="department" required>
+          <option>Computer Science</option>
+          <option>Information Technology</option>
+          <option>Electronics</option>
+        </select>
+      </label>
+      <label>Semester*:
+        <select name="semester" required>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </label>
+      <label>Year*:
+        <input type="text" name="year" placeholder="2025-2026" required>
+      </label>
+      <button type="submit">Save Course</button>
+    </form>
+  </section>
+
 </body>
 </html>
-

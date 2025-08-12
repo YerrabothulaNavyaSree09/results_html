@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Mapped Course</title>
+  <link rel="stylesheet" href="cft.css">
 </head>
 <body>
-    
+
+  <h1 class="page-title">Faculty Mapped Courses</h1>
+
+  
+  <div class="form-section">
+    <form>
+      <div class="form-group">
+        <label for="faculty">Faculty<span>*</span></label>
+        <select id="faculty" required>
+          <option value="">Select Faculty</option>
+          <option>John Doe</option>
+          <option>Jane Smith</option>
+          <option>David Miller</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course<span>*</span></label>
+        <select id="course" required>
+          <option value="">Select Course</option>
+          <option>Front End Development</option>
+          <option>DBMS</option>
+          <option>AI & ML</option>
+          <option>Operating Systems</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Academic Year<span>*</span></label>
+        <select id="year" required>
+          <option>2025-2026</option>
+          <option>2024-2025</option>
+          <option>2023-2024</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="semester">Semester<span>*</span></label>
+        <select id="semester" required>
+          <option>Semester 1</option>
+          <option>Semester 2</option>
+          <option>Semester 3</option>
+          <option>Semester 4</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status</label>
+        <select id="status">
+          <option>Active</option>
+          <option>Inactive</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Save Mapping</button>
+      </div>
+    </form>
+  </div>
+
+ 
+  <h2 class="section-title">Existing Mappings</h2>
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Mapping ID</th>
+        <th>Faculty</th>
+        <th>Course</th>
+        <th>Academic Year</th>
+        <th>Semester</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MP001</td>
+        <td>John Doe</td>
+        <td>Front End Development</td>
+        <td>2025-2026</td>
+        <td>Semester 1</td>
+        <td><span class="badge active">Active</span></td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>MP002</td>
+        <td>Jane Smith</td>
+        <td>AI & ML</td>
+        <td>2024-2025</td>
+        <td>Semester 2</td>
+        <td><span class="badge inactive">Inactive</span></td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>

@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result Project HTML</title>
+    <title>Result Analysis Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <center><h1> Result Analysis Project </h1></center>
-   
-   <center> <table border="1">
-        <tr>
-            <td> <a href="Public_media/admin logo.jpeg">
-            <img src="Public_media/admin logo.jpeg" alt="Admin logo" width="120" height="120">
-            </a></td>
-            <td><a href="Public_media/faculty logo.jpeg">
-                <img src="Public_media/faculty logo.jpeg" alt="Faculty logo" width="120" height="120">
-            </a></td>
-            <td>
-                <a href="Public_media/student logo.png">
-                    <img src="Public_media/student logo.png" alt="student logo" width="120"height="120">
-                </a></td>
-                
-                
-        </tr>
-    </table>
-    </center>
-    
+    <div class="container">
+        <h1>Result Analysis Dashboard</h1>
+        <div class="grid">
+            <div class="card">
+                <a href="http://127.0.0.1:5500/Admin/admin_index.html">
+                    <img src="../Public_media/admin logo.jpeg" alt="Admin logo">
+                    <h4>Admin</h4>
+                </a>
+            </div>
+            <div class="card">
+                <a href="http://127.0.0.1:5500/Faculty/faculty_index.html">
+                    <img src="../Public_media/faculty logo.jpeg" alt="Faculty member logo">
+                    <h4>Faculty</h4>
+                </a>
+            </div>
+            <div class="card">
+                <a href="http://127.0.0.1:5500/Student/student_index.html">
+                    <img src="../Public_media/student logo.png" alt="Student logo">
+                    <h4>Student</h4>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

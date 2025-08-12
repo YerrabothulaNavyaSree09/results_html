@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Reports</title>
+  <link rel="stylesheet" href="areport.css" />
 </head>
 <body>
+
+  <h1 class="heading">Admin Reports</h1>
+
+  
+  <div class="filter-section card">
+    <label>Id No:
+    <select>
+        <option>32674</option>
+        <option>34567</option>
+        <option>24567</option>
+    </select>
+    </label>
+    <label>
+      Department:
+      <select>
+        <option>All</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>MECH</option>
+      </select>
+    </label>
+
+    <label>
+      Course:
+      <select>
+        <option>All</option>
+        <option>Front End Development</option>
+        <option>Operating Systems</option>
+        <option>DBMS</option>
+      </select>
+    </label>
+
+    <label>
+      Academic Year:
+      <select>
+        <option>2025-26</option>
+        <option>2024-25</option>
+        <option>2023-24</option>
+        <option>2022-23</option>
+      </select>
+    </label>
+
+    <label>
+      Semester:
+      <select>
+        <option>All</option>
+        <option>1st Sem</option>
+        <option>2nd Sem</option>
+      </select>
+    </label>
+
+    <label>
+      Grade Range:
+      <select>
+        <option>All</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+      </select>
+    </label>
     
+
+    <button class="apply-btn">Apply Filters</button>
+  </div>
+
+  
+  <div class="tabs card">
+    <button class="tab ">Course-wise</button>
+    <button class="tab">Student-wise</button>
+    <button class="tab">Faculty-wise</button>
+  </div>
+
+ 
+  <div class="table-wrapper card">
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Total Students</th>
+          <th>Avg Grade</th>
+          <th>Pass %</th>
+          <th>Cgpa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FED</td>
+          <td><span >50</span></td>
+          <td>A</td>
+          <td>92%</td>
+        </tr>
+        <tr>
+          <td>Operating Systems</td>
+          <td><span >45</span></td>
+          <td>B+</td>
+          <td>85%</td>
+        </tr>
+        <tr class="subtotal">
+          <td><strong>Subtotal</strong></td>
+          <td><strong>95</strong></td>
+          <td><strong>A-</strong></td>
+          <td><strong>88.5%</strong></td>
+          <td><strong> 9.48</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </body>
 </html>

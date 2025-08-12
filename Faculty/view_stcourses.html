@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course-wise Student List</title>
+  <link rel="stylesheet" href="stcourse.css" />
 </head>
 <body>
-    
+
+  <h1 class="page-title">Course-wise Student List</h1>
+
+ 
+  <div class="filter-section">
+    <div class="filter-group">
+      <label for="course">Course:</label>
+      <select id="course">
+        <option selected disabled>Select Course</option>
+        <option>Front End Development</option>
+        <option>DBMS</option>
+        <option>Open Source Engineering</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="section">Section:</label>
+      <select id="section">
+        <option selected disabled>Select Section</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="ay">Academic Year:</label>
+      <select id="ay">
+        <option>2025-2026</option>
+        <option>2024-2025</option>
+        <option>2023-2024</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="semester">Semester:</label>
+      <select id="semester">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </div>
+
+
+  <h2 class="section-title">Student Details</h2>
+
+  <table class="student-table">
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Email</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>STU001</td>
+        <td>John Doe</td>
+        <td>23BCE1001</td>
+        <td>john@example.com</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>STU002</td>
+        <td>Jane Smith</td>
+        <td>23BCE1002</td>
+        <td>jane@example.com</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>STU003</td>
+        <td>Emily Johnson</td>
+        <td>23BCE1003</td>
+        <td>emily@example.com</td>
+        <td>Inactive</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>

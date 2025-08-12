@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2e6ff;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  color: #320525;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #a2cfdb;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-section label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.filter-section select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.apply-btn {
+  background-color: #320525;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #c0c9ee;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #320525;
+  color: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #c0c9ee;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #320525;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.subtotal {
+  background-color: #d9e3f7;
+  font-weight: bold;
+}

@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Result Dashboard</title>
+  <link rel="stylesheet" href="aresults.css">
 </head>
 <body>
-    
+
+  <h1 class="heading">Admin Result Dashboard</h1>
+
+  <div class="nav-links">
+    <ul>
+      <li><a href="Add_Results.html">Add Results</a></li>
+      <li><a href="Update_Results.html">Upload Results</a></li>
+      <li><a href="Delete_Results.html">Delete Results</a></li>
+      <li><a href="Post_Announcements.html">Post Announcements</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="filter-section">
+    <label for="course"><b>Select Course:</b></label>
+    <select id="course" name="course">
+      <option value="FED">FED</option>
+      <option value="Oops">Oops</option>
+      <option value="AI&ML">AI & ML</option>
+      <option value="OS">OS</option>
+    </select>
+  </div>
+
+  <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S.No.</th>
+        <th>Reg No.</th>
+        <th>Name</th>
+        <th>Marks Obtained</th>
+        <th>Total Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>3139</td>
+        <td>Lathish</td>
+        <td>96</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3299</td>
+        <td>Navya</td>
+        <td>94</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3294</td>
+        <td>Suma</td>
+        <td>97</td>
+        <td>100</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>

@@ -1,0 +1,127 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2e6ff;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+
+.form-section {
+  background: #9fccd8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+label span {
+  color: red;
+}
+
+select {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+.btn-primary {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #8eb4cd;
+}
+
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.styled-table th, .styled-table td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+.styled-table thead {
+  background-color: #94c3e3;
+  color: white;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #eaf4fc;
+}
+
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.badge.active {
+  background-color: #7eeaa9;
+  color: white;
+}
+
+.badge.inactive {
+  background-color: #d17066;
+  color: white;
+}
+
+
+.btn-edit, .btn-delete {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #a5b6cd;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #c7b79e;
+}
+
+.btn-delete {
+  background-color: #bed1d6;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #9d7d7a;
+}

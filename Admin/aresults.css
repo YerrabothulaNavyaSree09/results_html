@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2e6ff; 
+  margin: 0;
+  padding: 20px;
+  color: #2c2c2c;
+}
+
+.heading {
+  text-align: center;
+  background-color: #b6c6eb;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-links li {
+  background-color: #a9d9e6;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li:hover {
+  background-color: #91c3d2;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+.filter-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #b6c6eb;
+  color: #2c2c2c;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f1f4fd;
+}
